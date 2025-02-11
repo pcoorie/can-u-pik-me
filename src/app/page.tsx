@@ -1,101 +1,127 @@
-import Image from "next/image";
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { MoveRight, Clock, CreditCard } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-gradient-to-br from-zinc-900 via-black to-zinc-900">
+      {/* Hero Section */}
+      <div className="relative isolate">
+        {/* Gradient Background */}
+        <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
+          <div className="absolute inset-0 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.pink.400),transparent)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(35rem_35rem_at_top_right,theme(colors.orange.400),transparent)]" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+        {/* Navigation */}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-sm border-b border-white/10">
+          <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-orange-500 text-transparent bg-clip-text">
+              CAN U PIK ME
+            </h1>
+            <div className="flex items-center gap-4">
+	      <Button variant="ghost" className="text-white" asChild>
+                <a href="https://www.goulburnaustralia.com.au/events/view-all-events/" target="_blank" rel="noopener noreferrer">
+                  What&apos;s On
+                </a>
+              </Button>
+	      <Button variant="ghost" className="text-white" asChild>
+                <a href="mailto:peter@canupikme.com.au">Contact</a>
+              </Button>
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero Content */}
+        <div className="container mx-auto px-4 pt-32 pb-24">
+          <div className="max-w-3xl mx-auto text-center space-y-8">
+            <h2 className="text-4xl sm:text-6xl font-bold text-white tracking-tight">
+              Pre-order ride share in{" "}
+              <span className="bg-gradient-to-r from-pink-500 to-orange-500 text-transparent bg-clip-text">
+                Goulburn
+              </span>
+            </h2>
+
+            <p className="text-zinc-400 text-lg sm:text-xl max-w-2xl mx-auto">
+              Choose your driver - Choose your time. Experience hassle-free travel with our modern ride-sharing
+              platform.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white"
+                asChild
+              >
+                <a href="https://canupikme.ondelight.app/" target="_blank" rel="noopener noreferrer">
+                  Book Now
+                  <MoveRight className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto border-zinc-700 text-white hover:bg-white/10"
+              >
+                Compare Us
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto border-zinc-700 text-white hover:bg-white/10"
+	        asChild
+              >
+	       <a href="http://apl.bz/w@?l=en" target="_blank" rel="noopener noreferrer">
+                  Download
+                </a>	
+              </Button>
+            </div>
+
+            {/* Features */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 text-left">
+              <div className="bg-white/5 border border-white/10 rounded-lg p-6 backdrop-blur-sm">
+                <Clock className="h-6 w-6 text-pink-500 mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Choose Your Time</h3>
+                <p className="text-zinc-400">
+                  Schedule rides in advance and never worry about transportation timing again.
+                </p>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-lg p-6 backdrop-blur-sm">
+                <CreditCard className="h-6 w-6 text-orange-500 mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Pay After Your Trip</h3>
+                <p className="text-zinc-400">
+                  No credit card required - Just tap and pay after your journey is complete.
+                </p>
+              </div>
+            </div>
+
+            {/* App Store Badges */}
+            <div className="pt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="https://apps.apple.com/us/app/pickmeapp-rides-in-your-city/id855068290" className="transition-transform hover:scale-105">
+                <Image
+                  src="/app-store.jpg"
+                  alt="Download on the App Store"
+                  width={200}
+                  height={60}
+		  className="h-[60px] w-[200px] object-contain"
+                />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.multibrains.taxi.passenger&hl=en_US&pli=1" className="transition-transform hover:scale-105">
+                <Image
+                  src="/GetItOnGooglePlay_Badge_Web_color_English.png"
+                  alt="Get it on Google Play"
+                  width={200}
+                  height={60}
+                  className="h-[60px] w-[200px] object-contain"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Download Section */}
+    </main>
+  )
 }
