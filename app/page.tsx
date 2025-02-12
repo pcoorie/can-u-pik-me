@@ -32,7 +32,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img src="../public/app-store-badge.png" alt="Download on the App Store" className="w-auto h-[60px]" />
+            <img src="app-store-badge.png" alt="Download on the App Store" className="w-auto h-[60px]" />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.multibrains.taxi.passenger&hl=en_US&pli=1"
@@ -40,7 +40,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img src="../public/google-play-badge.png" alt="Get it on Google Play" className="w-auto h-[60px]" />
+            <img src="google-play-badge.png" alt="Get it on Google Play" className="w-auto h-[60px]" />
           </a>
         </div>
       </section>
