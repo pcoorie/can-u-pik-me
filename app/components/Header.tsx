@@ -10,7 +10,7 @@ export default function Header() {
         </Link>
         <nav className="hidden md:block">
           <a
-            href="mailto:peter@canupikme.com.au"
+            href="mailto:canupikme@gmail.com"
             className="text-white font-semibold hover:text-[#E93B90] transition-colors duration-300"
             aria-label="Contact us via email"
           >

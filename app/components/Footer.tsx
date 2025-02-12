@@ -12,26 +12,21 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
-                <Link href="#" className="hover:text-[#D5277B]">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-[#D5277B]">
-                <a href="mailto:peter@canupikme.com.au" Contact>
-                </Link>
+            <li>
+                <a href="#" className="hover:text-[#D5277B]">
+                  Apply to drive (coming soon)
+                </a>
               </li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <p>Email: peter@canupikme.com.au</p>
+            <p>Email: canupikme@gmail.com</p>
             <p>Goulburn, NSW</p>
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Can U Pik Me. All rights reserved 2025. A registered Booking Provider with the NSW Point to Point Transport Commission -
+          <p>&copy; {new Date().getFullYear()} Can U Pik Me. All rights reserved. A registered Booking Provider with the NSW Point to Point Transport Commission -
 
 Authorisation No: BSP-445746</p>
         </div>
