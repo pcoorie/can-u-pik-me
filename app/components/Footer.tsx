@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Can U Pik Me</h3>
-            <p>Local rideshare in Goulburn and Yass NSW</p>
+            <p>Rideshare in Goulburn and Yass NSW</p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
@@ -19,7 +19,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#" className="hover:text-[#D5277B]">
-                  Contact
+                <a href="mailto:peter@canupikme.com.au" Contact>
                 </Link>
               </li>
             </ul>
