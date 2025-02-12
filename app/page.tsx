@@ -30,25 +30,17 @@ export default function Home() {
             href="https://apps.apple.com/us/app/pickmeapp-rides-in-your-city/id855068290"
             target="_blank"
             rel="noopener noreferrer"
-            className="app-store-button flex items-center"
+            className="hover:opacity-80 transition-opacity"
           >
-            <AppleIcon />
-            <div className="ml-3 text-left">
-              <div className="text-xs">Download on the</div>
-              <div className="text-xl font-semibold">App Store</div>
-            </div>
+            <img src="../public/app-store-badge.png" alt="Download on the App Store" className="w-auto h-[60px]" />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.multibrains.taxi.passenger&hl=en_US&pli=1"
             target="_blank"
             rel="noopener noreferrer"
-            className="app-store-button flex items-center"
+            className="hover:opacity-80 transition-opacity"
           >
-            <GooglePlayIcon />
-            <div className="ml-3 text-left">
-              <div className="text-xs">GET IT ON</div>
-              <div className="text-xl font-semibold">Google Play</div>
-            </div>
+            <img src="../public/google-play-badge.png" alt="Get it on Google Play" className="w-auto h-[60px]" />
           </a>
         </div>
       </section>
