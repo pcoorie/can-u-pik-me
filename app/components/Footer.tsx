@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Can U Pik Me</h3>
-            <p>Your local rideshare in Goulburn</p>
+            <p>Local rideshare in Goulburn and Yass NSW</p>
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>

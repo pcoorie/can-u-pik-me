@@ -1,6 +1,3 @@
-import AppleIcon from "./components/AppleIcon"
-import GooglePlayIcon from "./components/GooglePlayIcon"
-
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-16 text-center">
