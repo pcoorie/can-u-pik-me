@@ -3,7 +3,7 @@ export default function Home() {
     <div className="container mx-auto px-4 py-16 text-center">
       <section className="max-w-5xl mx-auto">
         <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white">CAN U PIK ME</h1>
-        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">Pre-order ride share trips in Goulburn</h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">Pre-order ride share in Goulburn and Yass</h2>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <a href="http://apl.bz/w@?l=en" className="btn-primary">
