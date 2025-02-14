@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <p>Email: canupikme@gmail.com</p>
+            <p>Email: <a href="mailto:canupikme@gmail.com?subject=Enquiry">canupikme@gmail.com</a></p>
           </div>
         </div>
         <div className="mt-8 text-center">
