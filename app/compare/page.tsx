@@ -85,7 +85,7 @@ const features = [
     uber: false,
   },
   {
-    name: 'We don&apos;t do "surge" pricing when things get busy',
+    name: 'We don\'t do "surge" pricing when things get busy',
     pickme: true,
     uber: false,
   },
@@ -95,7 +95,7 @@ const features = [
     uber: false,
   },
   {
-    name: "Drivers don&apos;t pay 27.5% fees to an off-shore US corporation",
+    name: "Drivers don't pay 27.5% fees to an off-shore US corporation",
     pickme: true,
     uber: false,
   },
@@ -105,7 +105,7 @@ const features = [
     uber: true,
   },
   {
-    name: "PickMeApp Goulburn is non-profit (Driver cost is 1.9% on card payments)",
+    name: "PickMeApp Goulburn is fair to drivers (Drivers keep 97.5% of fares)",
     pickme: true,
     uber: false,
   },
@@ -115,7 +115,7 @@ const features = [
     uber: false,
   },
   {
-    name: "We don&apos;t use generative AI chatbots to fake human support",
+    name: "We don't use generative AI chatbots to fake human support",
     pickme: true,
     uber: false,
   },
