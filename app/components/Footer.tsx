@@ -1,4 +1,3 @@
-import Link from "next/link"
 import Image from "next/image"
 
 export default function Footer() {
@@ -26,7 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Can U Pik Me. A registered Booking Provider with the NSW Point to Point Transport Commission -
+          <p className="text-sm mb-4">&copy; {new Date().getFullYear()} Can U Pik Me. A registered Booking Provider with the NSW Point to Point Transport Commission -
 
 Authorisation No: BSP-445746</p>
 <div className="flex justify-center items-center">
