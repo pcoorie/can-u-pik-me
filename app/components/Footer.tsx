@@ -28,9 +28,9 @@ export default function Footer() {
           <p className="text-sm mb-4">&copy; {new Date().getFullYear()} Can U Pik Me. A registered Booking Provider with the NSW Point to Point Transport Commission -
 
 Authorisation No: BSP-445746</p>
-<div className="flex justify-center items-center bg-white bg-opacity-80 rounded-lg p-2 max-w-[400px] mx-auto">
+<div className="flex justify-center items-center max-w-[400px] mx-auto">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dashsticker-7xazib1b8xoubw52cFBT9kbCB1cZLr.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner2-L8T5Kykz7dAXkrQCTzLh2Yn8rhxdbK.png"
               alt="Authorised by the NSW Point to Point Transport Commissioner"
               width={400}
               height={50}
