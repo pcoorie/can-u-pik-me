@@ -25,9 +25,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p className="text-sm mb-4">&copy; {new Date().getFullYear()} Can U Pik Me. A registered Booking Provider with the NSW Point to Point Transport Commission -
-
-Authorisation No: BSP-445746</p>
+          <p className="text-sm mb-4">&copy; {new Date().getFullYear()} Can U Pik Me. A registered Booking Provider with the NSW Point to Point Transport Commissioner</p>
 <div className="flex justify-center items-center max-w-[400px] mx-auto">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner2-L8T5Kykz7dAXkrQCTzLh2Yn8rhxdbK.png"
