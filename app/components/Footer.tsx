@@ -1,3 +1,6 @@
+import Link from "next/link"
+import Image from "next/image"
+
 export default function Footer() {
   return (
     <footer className="bg-[#4A0D2C] text-white py-8 mt-auto">
@@ -23,9 +26,18 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Can U Pik Me. All rights reserved. A registered Booking Provider with the NSW Point to Point Transport Commission -
+          <p>&copy; {new Date().getFullYear()} Can U Pik Me. A registered Booking Provider with the NSW Point to Point Transport Commission -
 
 Authorisation No: BSP-445746</p>
+<div className="flex justify-center items-center">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nsw-p20-sPLEBgjnuXopnmvZEHA2eh9bLb0L5m.png"
+              alt="NSW Point to Point Transport Commissioner"
+              width={200}
+              height={50}
+              className="opacity-80"
+            />
+          </div>
         </div>
       </div>
     </footer>
