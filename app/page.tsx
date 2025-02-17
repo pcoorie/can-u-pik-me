@@ -13,7 +13,7 @@ export default function Home() {
             COMPARE US
           </a>
           <a href="https://canupikme.ondelight.app/" className="btn-primary">
-            BOOK NOW
+            BOOK ONLINE
           </a>
         </div>
 
