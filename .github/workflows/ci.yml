@@ -1,0 +1,54 @@
+name: CI Test Workflow
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push events but only for the main branch
+  push:
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs
+jobs:
+  # This workflow contains a single job called "build-and-test"
+  build-and-test:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE
+      - uses: actions/checkout@v3
+
+      # Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          npm ci
+          
+      # Run tests
+      - name: Run tests
+        run: |
+          npm test
+          
+      # Run linting
+      - name: Run linting
+        run: |
+          npm run lint
+          
+      # Build the project
+      - name: Build
+        run: |
+          npm run build
+          
+      # Add a custom message to the job summary
+      - name: Job Summary
+        run: |
+          echo "## Build and Test Results ✨" >> $GITHUB_STEP_SUMMARY
+          echo "* Build completed successfully" >> $GITHUB_STEP_SUMMARY
+          echo "* All tests passed" >> $GITHUB_STEP_SUMMARY
