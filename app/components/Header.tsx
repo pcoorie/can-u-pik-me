@@ -52,7 +52,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  href="mailto:canupikme@gmail.com"
+                  href="mailto:peter@canupikme.com.au"
                   className="block text-white font-semibold hover:text-[#E93B90] transition-colors duration-300"
                   aria-label="Contact us via email"
                 >

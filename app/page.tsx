@@ -1,19 +1,21 @@
+import Image from "next/image"
+
 export default function Home() {
   return (
     <div className="container mx-auto px-4 py-16 text-center">
       <section className="max-w-5xl mx-auto">
         <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white">CAN U PIK ME</h1>
-        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">Reserve ride share in Goulburn and Yass</h2>
+        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-white">Pre-order ride share trips in Goulburn</h2>
 
         <div className="flex flex-col md:flex-row gap-4 justify-center mb-12">
           <a href="http://apl.bz/w@?l=en" className="btn-primary">
-            GET THE APP
+            DOWNLOAD THE APP
           </a>
-          <a href="compare/" className="btn-primary">
+          <a href="/compare" className="btn-primary">
             COMPARE US
           </a>
           <a href="https://canupikme.ondelight.app/" className="btn-primary">
-            BOOK ONLINE
+            BOOK NOW
           </a>
         </div>
 
@@ -29,7 +31,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img src="app-store-badge.png" alt="Download on the App Store" className="w-auto h-[60px]" />
+            <Image src="/app-store-badge.png" alt="Download on the App Store" width={180} height={60} priority />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.multibrains.taxi.passenger&hl=en_US&pli=1"
@@ -37,7 +39,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
           >
-            <img src="google-play-badge.png" alt="Get it on Google Play" className="w-auto h-[60px]" />
+            <Image src="/google-play-badge.png" alt="Get it on Google Play" width={180} height={60} priority />
           </a>
         </div>
       </section>
